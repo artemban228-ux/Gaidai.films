@@ -1,0 +1,205 @@
+<html>
+  <title>Актёры Леонида Гайдая</title>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+    body{
+      font-family: Arial, sans-serif;
+      background:#f4f1e8;
+      color:#222;
+    }
+    header{
+      background:#1f1f1f;
+      padding:20px 60px;
+    }
+    .header-container{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+    .logo{
+      color:white;
+      font-size:28px;
+      font-weight:bold;
+    }
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin-left:25px;
+      font-size:16px;
+      transition:0.3s;
+    }
+    nav a:hover{
+      color:#d6b36a;
+    }
+    .container{
+      width:85%;
+      margin:auto;
+    }
+    .hero{
+      margin-top:40px;
+      background:white;
+      padding:70px;
+      border-radius:15px;
+      box-shadow:0 5px 15px rgba(0,0,0,0.1);
+      text-align:center;
+    }
+    .hero h1{
+      font-size:48px;
+      margin-bottom:20px;
+    }
+    .hero p{
+      font-size:20px;
+      line-height:1.8;
+    }
+    .actors-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+      gap:30px;
+      margin-top:40px;
+      margin-bottom:50px;
+    }
+    .actor-card{
+      background:white;
+      border-radius:15px;
+      overflow:hidden;
+      box-shadow:0 5px 15px rgba(0,0,0,0.1);
+      transition:0.3s;
+    }
+    .actor-card:hover{
+      transform:translateY(-5px);
+    }
+    .actor-card img{
+      width:80%;
+      height:400px;
+      object-fit:cover;
+      display: block;
+      margin: 0 auto;
+    }
+    .actor-content{
+      padding:25px;
+    }
+    .actor-content h2{
+      margin-bottom:15px;
+      font-size:26px;
+    }
+    .actor-content p{
+      font-size:17px;
+      line-height:1.7;
+    }
+    footer{
+      background:#1f1f1f;
+      color:white;
+      text-align:center;
+      padding:50px 20px;
+      line-height:2;
+      font-size:18px;
+    }
+    @media(max-width:768px){
+      .header-container{
+        flex-direction:column;
+        gap:20px;
+      }
+      nav{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+      }
+      .hero{
+        padding:40px;
+      }
+      .hero h1{
+        font-size:36px;
+      }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="header-container">
+    <div class="logo">
+      Актёры Гайдая
+    </div>
+    <nav>
+      <a href="index.html">Биография</a>
+      <a href="Фильмы.html">Фильмы</a>
+      <a href="Актёры.html">Актёры</a>
+      <a href="Галерея.html">Галерея</a>
+      <a href="Викторина.html">Викторина</a>
+    </nav>
+  </div>
+</header>
+<div class="container">
+  <section class="hero">
+    <h1>Актёры фильмов Леонида Гайдая</h1>
+    <p>
+      В фильмах Леонида Гайдая снимались легендарные актёры,
+      которые стали символами советской комедии.
+    </p>
+  </section>
+  <section class="actors-grid">
+    <div class="actor-card">
+      <img src="Демьяненко.jpg">
+      <div class="actor-content">
+        <h2>Александр Демьяненко</h2>
+        <p>
+          Исполнитель роли Шурика — одного из самых
+          любимых персонажей советского кино.
+          Символ интеллигентного героя комедий Гайдая.
+        </p>
+      </div>
+    </div>
+    <div class="actor-card">
+      <img src="Никулин.png">
+      <div class="actor-content">
+        <h2>Юрий Никулин</h2>
+        <p>
+          Великий комик и актёр, сыгравший в «Бриллиантовой руке»
+          и других культовых фильмах Гайдая.
+        </p>
+      </div>
+    </div>
+    <div class="actor-card">
+      <img src="Варлей.jpg">
+      <div class="actor-content">
+        <h2>Наталья Варлей</h2>
+        <p>
+          Исполнительница роли Нины в «Кавказской пленнице».
+          Одна из самых популярных актрис советского кино.
+        </p>
+      </div>
+    </div>
+    <div class="actor-card">
+      <img src="Куравлёв.png">
+      <div class="actor-content">
+        <h2>Леонид Куравлёв</h2>
+        <p>
+          Сыграл яркие комедийные роли в фильмах Гайдая,
+          включая «Иван Васильевич меняет профессию».
+        </p>
+      </div>
+    </div>
+    <div class="actor-card">
+      <img src="Вицин.jpg">
+      <div class="actor-content">
+        <h2>Георгий Вицин</h2>
+        <p>
+          Легендарный актёр комедийного жанра,
+          участник знаменитой троицы (Трус, Балбес, Бывалый).
+        </p>
+      </div>
+    </div>
+  </section>
+</div>
+<footer>
+  <p>Создано студентом Череповецкого Государственного университета</p>
+  <p>Институт Информационных Технологий</p>
+  <p>Группа 1ПИб-02-2оп-25</p>
+  <p>Старостиным Владиславом</p>
+  <p>Под руководством Сальниковой Ольги Сергеевны</p>
+</footer>
+</body>
+</html>

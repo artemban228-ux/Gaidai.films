@@ -1,0 +1,225 @@
+<html>
+<head>
+  <title>Биография Леонида Гайдая</title>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+    body{
+      font-family: Arial, sans-serif;
+      background:#f4f1e8;
+      color:#222;
+    }
+    header{
+      background:#1f1f1f;
+      padding:20px 60px;
+      position:sticky;
+      top:0;
+    }
+    .header-container{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+    .logo{
+      color:white;
+      font-size:28px;
+      font-weight:bold;
+    }
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin-left:25px;
+      font-size:16px;
+      transition:0.3s;
+    }
+    nav a:hover{
+      color:#d6b36a;
+    }
+    .container{
+      width:85%;
+      margin:auto;
+    }
+    .hero{
+      margin-top:40px;
+      background:white;
+      padding:70px;
+      border-radius:15px;
+      box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    }
+    .hero h1{
+      font-size:52px;
+      margin-bottom:25px;
+    }
+    .hero p{
+      font-size:20px;
+      max-width:800px;
+      line-height:1.8;
+    }
+    .section{
+      margin-top:40px;
+      background:white;
+      padding:50px;
+      border-radius:15px;
+      box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    }
+    .section h2{
+      font-size:36px;
+      margin-bottom:25px;
+    }
+    .section p{
+      margin-bottom:20px;
+      font-size:18px;
+      line-height:1.8;
+    }
+    .facts li{
+      margin-bottom:15px;
+      font-size:18px;
+    }
+    .gallery{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
+      margin-top:25px;
+    }
+    .gallery img{
+      width:100%;
+      height:350px;
+      object-fit:cover;
+      border-radius:12px;
+      transition:0.3s;
+    }
+    .gallery img:hover{
+      transform:scale(1.03);
+    }
+    .awards{
+      list-style:none;
+      margin-top:10px;
+    }
+    .awards li{
+      background:#f4f1e8;
+      padding:15px 20px;
+      margin-bottom:12px;
+      border-radius:10px;
+      font-size:18px;
+      border-left:5px solid #d6b36a;
+    }
+    footer{
+      margin-top:50px;
+      background:#1f1f1f;
+      color:white;
+      text-align:center;
+      padding:50px 20px;
+      line-height:2;
+      font-size:18px;
+    }
+    @media(max-width:768px){
+      .header-container{
+        flex-direction:column;
+        gap:20px;
+      }
+      nav{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+      }
+      .hero{
+        padding:40px;
+      }
+      .hero h1{
+        font-size:36px;
+      }
+      .hero p{
+        font-size:18px;
+      }
+      .section{
+        padding:35px;
+      }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="header-container">
+    <div class="logo">Леонид Гайдай</div>
+    <nav>
+      <a href="index.html">Биография</a>
+      <a href="Фильмы.html">Фильмы</a>
+      <a href="Актёры.html">Актёры</a>
+      <a href="Галерея.html">Галерея</a>
+      <a href="Викторина.html">Викторина</a>
+    </nav>
+  </div>
+</header>
+<div class="container">
+  <section class="hero">
+    <h1>Леонид Гайдай - легенда советского кино</h1>
+    <p>
+      Леонид Иович Гайдай - выдающийся советский кинорежиссёр,
+      сценарист и мастер комедийного жанра.
+      Его фильмы стали классикой отечественного кинематографа
+      и до сих пор остаются любимыми для миллионов зрителей.
+    </p>
+  </section>
+  <section class="section">
+    <h2>Биография</h2>
+    <p>
+      Леонид Гайдай родился 30 января 1923 года
+      в городе Свободный Амурской области.
+      После школы он участвовал в Великой Отечественной войне,
+      а позже поступил во ВГИК, где начал путь режиссёра.
+    </p>
+    <p>
+      Настоящая популярность пришла к нему после создания
+      культовых советских комедий:
+      «Операция „Ы“», «Кавказская пленница»,
+      «Бриллиантовая рука» и других.
+    </p>
+    <p>
+      Его фильмы отличались ярким юмором,
+      харизматичными персонажами и необычной подачей.
+      Многие фразы из фильмов Гайдая стали крылатыми.
+    </p>
+  </section>
+  <section class="section">
+    <h2>Награды</h2>
+    <ul class="awards">
+      <li>Заслуженный деятель искусств РСФСР</li>
+      <li>Народный артист РСФСР</li>
+      <li>Орден Трудового Красного Знамени</li>
+      <li>Орден Дружбы народов</li>
+      <li>Государственная премия РСФСР имени братьев Васильевых</li>
+      <li>Множество почётных премий за вклад в кинематограф</li>
+    </ul>
+  </section>
+  <section class="section">
+    <h2>Интересные факты</h2>
+    <ul class="facts">
+      <li>Леонид Гайдай участвовал в Великой Отечественной войне.</li>
+      <li>В его фильмах часто снималась знаменитая троица: Никулин, Вицин и Моргунов.</li>
+      <li>Фильм «Бриллиантовая рука» стал одним из самых популярных фильмов СССР.</li>
+      <li>Многие сцены снимались в Крыму и на Кавказе.</li>
+      <li>Гайдай лично участвовал в написании сценариев.</li>
+      <li>Его фильмы знают и любят уже несколько поколений зрителей.</li>
+    </ul>
+  </section>
+  <section class="section">
+    <h2>Фотографии Леонида Гайдая</h2>
+    <div class="gallery">
+      <img src="Гайдай1.jpg">
+      <img src="Гайдай2.jpg">
+      <img src="Гайдай3.jpg">
+    </div>
+  </section>
+</div>
+<footer>
+  <p>Создано студентом Череповецкого Государственного университета</p>
+  <p>Институт Информационных Технологий</p>
+  <p>Группа 1ПИб-02-2оп-25</p>
+  <p>Старостиным Владиславом</p>
+  <p>Под руководством Сальниковой Ольги Сергеевны</p>
+</footer>
+</body>
+</html>

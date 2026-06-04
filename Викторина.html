@@ -1,0 +1,245 @@
+<html>
+<head>
+  <title>Викторина - Леонид Гайдай</title>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+    body{
+      font-family: Arial, sans-serif;
+      background:#f4f1e8;
+      color:#222;
+    }
+    header{
+      background:#1f1f1f;
+      padding:20px 60px;
+      position:sticky;
+      top:0;
+    }
+    .header-container{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+    .logo{
+      color:white;
+      font-size:28px;
+      font-weight:bold;
+    }
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin-left:25px;
+      font-size:16px;
+      transition:0.3s;
+    }
+    nav a:hover{
+      color:#d6b36a;
+    }
+    .container{
+      width:85%;
+      margin:auto;
+    }
+    .hero{
+      margin-top:40px;
+      background:white;
+      padding:70px;
+      border-radius:15px;
+      box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    }
+    .hero h1{
+      font-size:52px;
+      margin-bottom:25px;
+    }
+    .hero p{
+      font-size:20px;
+      max-width:800px;
+      line-height:1.8;
+    }
+    .section{
+      margin-top:40px;
+      background:white;
+      padding:50px;
+      border-radius:15px;
+      box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    }
+    .section h2{
+      font-size:36px;
+      margin-bottom:25px;
+    }
+    .section p{
+      margin-bottom:20px;
+      font-size:18px;
+      line-height:1.8;
+    }
+    .facts li{
+      margin-bottom:15px;
+      font-size:18px;
+    }
+    .gallery{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
+      margin-top:25px;
+    }
+    .gallery img{
+      width:100%;
+      height:350px;
+      object-fit:cover;
+      border-radius:12px;
+      transition:0.3s;
+    }
+    .gallery img:hover{
+      transform:scale(1.03);
+    }
+    .awards{
+      list-style:none;
+      margin-top:10px;
+    }
+    .awards li{
+      background:#f4f1e8;
+      padding:15px 20px;
+      margin-bottom:12px;
+      border-radius:10px;
+      font-size:18px;
+      border-left:5px solid #d6b36a;
+    }
+    footer{
+      margin-top:50px;
+      background:#1f1f1f;
+      color:white;
+      text-align:center;
+      padding:50px 20px;
+      line-height:2;
+      font-size:18px;
+    }
+    @media(max-width:768px){
+      .header-container{
+        flex-direction:column;
+        gap:20px;
+      }
+      nav{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+      }
+      .hero{
+        padding:40px;
+      }
+      .hero h1{
+        font-size:36px;
+      }
+      .hero p{
+        font-size:18px;
+      }
+      .section{
+        padding:35px;
+      }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="header-container">
+    <div class="logo">Леонид Гайдай</div>
+    <nav>
+      <a href="index.html">Биография</a>
+      <a href="Фильмы.html">Фильмы</a>
+      <a href="Актёры.html">Актёры</a>
+      <a href="Галерея.html">Галерея</a>
+      <a href="Викторина.html">Викторина</a>
+    </nav>
+  </div>
+</header>
+<div class="container">
+    <section class="hero">
+        <h1>Викторина по фильмам Леонида Гайдая</h1>
+        <p>
+            Проверьте свои знания легендарных советских комедий.
+            Ответьте на 5 вопросов и узнайте, насколько хорошо
+            вы помните фильмы великого режиссёра.
+        </p>
+    </section>
+    <section class="section">
+        <h2>Пройдите викторину</h2>
+        <form id="quizForm">
+            <div class="question">
+                <p><strong>1. В каком фильме звучит знаменитая фраза «Чёрт побери!»?</strong></p>
+                <label><input type="radio" name="q1" value="0"> Кавказская пленница</label><br>
+                <label><input type="radio" name="q1" value="1"> Бриллиантовая рука</label><br>
+                <label><input type="radio" name="q1" value="0"> Операция «Ы»</label><br>
+                <label><input type="radio" name="q1" value="0"> Иван Васильевич меняет профессию</label>
+            </div>
+            <br><hr><br>
+            <div class="question">
+                <p><strong>2. Как звали главную героиню фильма «Кавказская пленница»?</strong></p>
+                <label><input type="radio" name="q2" value="0"> Зина</label><br>
+                <label><input type="radio" name="q2" value="1"> Нина</label><br>
+                <label><input type="radio" name="q2" value="0"> Людмила</label><br>
+                <label><input type="radio" name="q2" value="0"> Вера</label>
+            </div>
+            <br><hr><br>
+            <div class="question">
+                <p><strong>3. Кто был главным героем фильма «Операция «Ы» и другие приключения Шурика»?</strong></p>
+                <label><input type="radio" name="q3" value="1"> Шурик</label><br>
+                <label><input type="radio" name="q3" value="0"> Горбунков</label><br>
+                <label><input type="radio" name="q3" value="0"> Бунша</label><br>
+                <label><input type="radio" name="q3" value="0"> Саахов</label>
+            </div>
+            <br><hr><br>
+            <div class="question">
+                <p><strong>4. Кто сыграл Семёна Горбункова в фильме «Бриллиантовая рука»?</strong></p>
+                <label><input type="radio" name="q4" value="1"> Юрий Никулин</label><br>
+                <label><input type="radio" name="q4" value="0"> Евгений Моргунов</label><br>
+                <label><input type="radio" name="q4" value="0"> Георгий Вицин</label><br>
+                <label><input type="radio" name="q4" value="0"> Александр Демьяненко</label>
+            </div>
+            <br><hr><br>
+            <div class="question">
+                <p><strong>5. Какой фильм рассказывает о путешествии во времени?</strong></p>
+                <label><input type="radio" name="q5" value="0"> Кавказская пленница</label><br>
+                <label><input type="radio" name="q5" value="0"> Самогонщики</label><br>
+                <label><input type="radio" name="q5" value="1"> Иван Васильевич меняет профессию</label><br>
+                <label><input type="radio" name="q5" value="0"> Деловые люди</label>
+            </div>
+            <br>
+            <button type="button" onclick="checkQuiz()">
+                Проверить результат
+            </button>
+        </form>
+        <h3 id="result" style="margin-top:25px;"></h3>
+    </section>
+</div>
+<script>
+function checkQuiz() {
+    let score = 0;
+    const answers = document.querySelectorAll(
+        'input[type="radio"]:checked'
+    );
+    answers.forEach(answer => {
+        score += Number(answer.value);
+    });
+    let text = "";
+    if(score === 5){
+        text = "Отлично! Вы настоящий знаток фильмов Гайдая! (5 из 5)";
+    }
+    else if(score >= 3){
+        text = "Хороший результат! ( " + score + " из 5 )";
+    }
+    else{
+        text = "Стоит пересмотреть фильмы Гайдая. Результат: " + score + " из 5";
+    }
+    document.getElementById("result").innerHTML = text;
+}
+</script>
+<footer>
+  <p>Создано студентом Череповецкого Государственного университета</p>
+  <p>Институт Информационных Технологий</p>
+  <p>Группа 1ПИб-02-2оп-25</p>
+  <p>Старостиным Владиславом</p>
+  <p>Под руководством Сальниковой Ольги Сергеевны</p>
+</footer>
+</body>
+</html>

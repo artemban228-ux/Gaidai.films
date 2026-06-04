@@ -1,0 +1,209 @@
+<html>
+  <title>Фильмы Леонида Гайдая</title>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+    body{
+      font-family: Arial, sans-serif;
+      background:#f4f1e8;
+      color:#222;
+    }
+    header{
+      background:#1f1f1f;
+      padding:20px 60px;
+    }
+    .header-container{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+    .logo{
+      color:white;
+      font-size:28px;
+      font-weight:bold;
+    }
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin-left:25px;
+      font-size:16px;
+      transition:0.3s;
+    }
+    nav a:hover{
+      color:#d6b36a;
+    }
+    .container{
+      width:85%;
+      margin:auto;
+    }
+    .hero{
+      margin-top:40px;
+      background:white;
+      padding:70px;
+      border-radius:15px;
+      box-shadow:0 5px 15px rgba(0,0,0,0.1);
+      text-align:center;
+    }
+    .hero h1{
+      font-size:48px;
+      margin-bottom:20px;
+    }
+    .hero p{
+      font-size:20px;
+      line-height:1.8;
+    }
+    .films-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+      gap:30px;
+      margin-top:40px;
+      margin-bottom:50px;
+    }
+    .film-card{
+      background:white;
+      border-radius:15px;
+      overflow:hidden;
+      box-shadow:0 5px 15px rgba(0,0,0,0.1);
+      transition:0.3s;
+    }
+    .film-card:hover{
+      transform:translateY(-5px);
+    }
+    .film-card img{
+      width:70%;
+      height:400px;
+      object-fit:cover;
+      display: block;
+      margin: 0 auto;
+    }
+    .film-content{
+      padding:25px;
+    }
+    .film-content h2{
+      margin-bottom:15px;
+      font-size:28px;
+    }
+    .film-content p{
+      font-size:17px;
+      line-height:1.7;
+    }
+    footer{
+      background:#1f1f1f;
+      color:white;
+      text-align:center;
+      padding:50px 20px;
+      line-height:2;
+      font-size:18px;
+    }
+    @media(max-width:768px){
+      .header-container{
+        flex-direction:column;
+        gap:20px;
+      }
+      nav{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+      }
+      .hero{
+        padding:40px;
+      }
+      .hero h1{
+        font-size:36px;
+      }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="header-container">
+    <div class="logo">
+      Фильмы Гайдая
+    </div>
+    <nav>
+      <a href="index.html">Биография</a>
+      <a href="Фильмы.html">Фильмы</a>
+      <a href="Актёры.html">Актёры</a>
+      <a href="Галерея.html">Галерея</a>
+      <a href="Викторина.html">Викторина</a>
+    </nav>
+  </div>
+</header>
+<div class="container">
+  <section class="hero">
+    <h1>Фильмы Леонида Гайдая</h1>
+    <p>
+      Леонид Гайдай создал множество легендарных комедий,
+      которые стали классикой советского кинематографа.
+    </p>
+  </section>
+  <section class="films-grid">
+    <div class="film-card">
+      <img src="Операция Ы.png">
+      <div class="film-content">
+        <h2>Операция «Ы»</h2>
+        <p>
+          Комедия 1965 года о приключениях Шурика.
+          Фильм состоит из трёх новелл и стал
+          одним из самых популярных фильмов СССР.
+        </p>
+      </div>
+    </div>
+    <div class="film-card">
+      <img src="Кавказская пленница.png">
+      <div class="film-content">
+        <h2>Кавказская пленница</h2>
+        <p>
+          Известная советская комедия о приключениях
+          Шурика на Кавказе и похищении Нины.
+          Многие фразы из фильма стали крылатыми.
+        </p>
+      </div>
+    </div>
+    <div class="film-card">
+      <img src="Бриллиантовая рука.png">
+      <div class="film-content">
+        <h2>Бриллиантовая рука</h2>
+        <p>
+          Комедия о контрабандистах и случайном
+          участнике преступной схемы Семёне Горбункове.
+          Один из самых известных фильмов Гайдая.
+        </p>
+      </div>
+    </div>
+    <div class="film-card">
+      <img src="Иван Васильевич.png">
+      <div class="film-content">
+        <h2>Иван Васильевич меняет профессию</h2>
+        <p>
+          Фантастическая комедия о машине времени,
+          которая переносит Ивана Грозного
+          в советскую квартиру.
+        </p>
+      </div>
+    </div>
+    <div class="film-card">
+      <img src="12 стульев.png">
+      <div class="film-content">
+        <h2>12 стульев</h2>
+        <p>
+          Экранизация знаменитого романа
+          Ильфа и Петрова о поисках драгоценностей,
+          спрятанных в одном из стульев.
+        </p>
+      </div>
+    </div>
+  </section>
+</div>
+<footer>
+  <p>Создано студентом Череповецкого Государственного университета</p>
+  <p>Институт Информационных Технологий</p>
+  <p>Группа 1ПИб-02-2оп-25</p>
+  <p>Старостиным Владиславом</p>
+  <p>Под руководством Сальниковой Ольги Сергеевны</p>
+</footer>
+</body>
+</html>
